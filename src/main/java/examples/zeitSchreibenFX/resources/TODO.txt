@@ -1,0 +1,15 @@
+Rename day in selectDayPane
+
+EnterVariablePane copy cell value with right click / ctrl+c
+
+disable opacity of editpane in StartUpPane
+
+
+BUGS:
+
+leeres zeiten feld verlassen mit tab
+fix save cell value on loss of focus(funktioniert bei focus loss, aber nicht wenn man andere zelle anklickt)
+
+
+DONE:
+When switching pane using menubar confirmation when in editmode

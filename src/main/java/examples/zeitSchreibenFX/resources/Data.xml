@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ? is used for getting the default value from the settings tag -->
+<!-- ! is used for the value with same tag in the dayPos before -->
+<!-- $variableName$ is used to get the value of the variable -->
+<!-- \ is used to disable the special characters right after it;; \\ to write 
+	one \ -->
+<root>
+	<settings>
+		<waitingTime>5000</waitingTime><!-- min/max values festlegen (1-60)? -->
+		<defCreateMore>false</defCreateMore>
+		<salesDoc>900343</salesDoc>
+		<ltpCode>90900</ltpCode>
+		<description>Default Desc</description>
+		<screenStartHeight></screenStartHeight>
+		<screenStartWidth></screenStartWidth>
+	</settings>
+
+	<days>
+		<day id="normaler Tag">
+			<dayPos>
+				<salesDoc>?</salesDoc>
+				<ltpCode>?</ltpCode>
+				<startTime>7.30</startTime>
+				<endTime>12</endTime>
+				<description>Custom $SUS$ Desc</description><!-- wird zu : Custom cringe 
+					Desc -->
+			</dayPos>
+			<dayPos>
+				<salesDoc>!</salesDoc>
+				<ltpCode>!</ltpCode>
+				<startTime>12.30</startTime>
+				<endTime>15</endTime>
+				<description>!</description>
+			</dayPos>
+			<dayPos>
+				<salesDoc>!</salesDoc>
+				<ltpCode>!</ltpCode>
+				<startTime>15</startTime>
+				<endTime>16.30</endTime>
+				<description>YEY $vari2$ \$</description><!-- wird zu : YEY Feierabend 
+					$ -->
+			</dayPos>
+			<variables>
+				<variable key=SUS>
+					<value>cringe</value>
+				</variable>
+				<variable key=vari2>
+					<value>Feierabend</value>
+				</variable>
+			</variables>
+		</day>
+	</days>
+</root>

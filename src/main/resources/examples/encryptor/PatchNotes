@@ -1,0 +1,10 @@
+Hey there! You have found the patch notes as it seems.... Don't expect too much.... This might even be the only notes that will ever exist.
+
+V1.1:
+Standard Encryption now can allows up to 30 characters as input
+Added the Encryption++ which can handle the first 9999 characters of the ASCII code and allows 999 characters as input
+Changed the way and the max of the amount of calculations done to the input
+Decryption automatically recognizes which encryption type was used and decrypts it back to plain text
+
+And of course added this very relevant info panel which surely did NOT take me almost two hours to make while still being bad
+Btw fuck you, javafx.scene.text.Text

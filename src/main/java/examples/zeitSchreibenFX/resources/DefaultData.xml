@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<days>
+	<day id="Example Day">
+		<dayPos>
+			<salesDoc>?</salesDoc>
+			<ltpCode>90900</ltpCode>
+			<startTime>07:30</startTime>
+			<endTime>09:00</endTime>
+			<description>Something $variable$</description>
+		</dayPos>
+		<dayPos>
+			<salesDoc>!</salesDoc>
+			<ltpCode>!</ltpCode>
+			<startTime>09:15</startTime>
+			<endTime>12:00</endTime>
+			<description>mhm</description>
+		</dayPos>
+		<variables>
+			<variable key="variable">
+				<value>value</value>
+			</variable>
+		</variables>
+	</day>
+</days>
