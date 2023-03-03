@@ -19,17 +19,19 @@ public class DatabaseManager {
 	}
 	
 	private static void establishDatabaseConnection() throws SQLException, ClassNotFoundException {
-		Class.forName("oracle.jdbc.driver.OracleDriver");
-		connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","c##john","abcd1234");  
-
-		PreparedStatement statement = connection.prepareStatement("select COUNT(*) from biffluser");
-		ResultSet result = statement.executeQuery();
+	//Just some first trys to connect to a local database at this stage only example
 		
-		while(result.next()) {
-			if(result.getString(1) != null) {
-				System.out.println("Database connected");
-			}
-		}
+//		Class.forName("oracle.jdbc.driver.OracleDriver");
+//		connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","c##john","abcd1234");  
+//
+//		PreparedStatement statement = connection.prepareStatement("select COUNT(*) from biffluser");
+//		ResultSet result = statement.executeQuery();
+//		
+//		while(result.next()) {
+//			if(result.getString(1) != null) {
+//				System.out.println("Database connected");
+//			}
+//		}
 	}
 	
 	public static ResultSet doQuery(String statementString) throws SQLException {
